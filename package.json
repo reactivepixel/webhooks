@@ -25,6 +25,7 @@
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "serve-index": "^1.8.0",
     "uuid4": "^1.0.0"
   }
 }

@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({
   extended: true,
 }));
 
+// Routes
 app.use('/', require('./routes')(express));
 
 module.exports = app.listen(port, () => {
