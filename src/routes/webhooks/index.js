@@ -5,7 +5,7 @@ module.exports = (express) => {
 
   router.post('/dump', (req, res) => {
 
-    fs.writeFile(uuid() + '.json', req.body, (err) => {
+    fs.writeFile('./logs/' + uuid() + '.json', req.body, (err) => {
       if (err) throw err;
       console.log('Recorded Hook Info to Logs');
     });
