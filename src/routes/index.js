@@ -15,7 +15,7 @@ module.exports = (express) => {
   // Static Files
   var logsDir = path.join(__dirname, '../../logs');
 
-  // router.use('/logs', express.static(logsDir));
+  router.use('/logs', express.static(logsDir));
   router.use('/logs', serveIndex(logsDir));
 
 
