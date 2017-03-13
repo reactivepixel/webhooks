@@ -1,0 +1,24 @@
+{
+  "name": "webhooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactivepixel/webhooks.git"
+  },
+  "keywords": [
+    "git",
+    "web",
+    "hooks"
+  ],
+  "author": "Chapman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reactivepixel/webhooks/issues"
+  },
+  "homepage": "https://github.com/reactivepixel/webhooks#readme"
+}
