@@ -1,11 +1,16 @@
 module.exports = (express) => {
   const router = express.Router();
+  const uuid = require('uuid4');
 
   router.post('/dump', (req, res) => {
 
-    console.log('Dumping whole request object to Console', req.body);
+    fs.writeFile(uuid() + '.json', req.body, (err) => {
+      if (err) throw err;
+      console.log('Recorded Hook Info to Logs');
+    });
+
     res.json({
-      checkLog: true,
+      hookInfo: req.body,
     });
   });
 
