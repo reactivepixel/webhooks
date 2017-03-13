@@ -1,6 +1,7 @@
 module.exports = (express) => {
   const router = express.Router();
   const uuid = require('uuid4');
+  const fs = require('fs');
 
   router.post('/dump', (req, res) => {
 
